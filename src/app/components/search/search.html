@@ -1,0 +1,13 @@
+<mat-form-field class="example-form-field">
+  <mat-label>Inicie por aqui...</mat-label>
+  <input
+    type="search"
+    matInput
+    [(ngModel)]="value"
+    placeholder="O que vc precisa?">
+  @if (value) {
+    <button matSuffix matIconButton aria-label="Clear" (click)="clearSearch()">
+      <mat-icon>close</mat-icon>
+    </button>
+  }
+</mat-form-field>
